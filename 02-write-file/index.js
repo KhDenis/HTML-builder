@@ -14,5 +14,5 @@ stdin.on('data', chunk => {
 stdin.on('error', error => console.log('Error', error.message));
 process.on('exit', () => stdout.write('\n Goodbye dear friend \n'));
 process.on('SIGINT', () => {stdout.write('\n Goodbye dear friend \n')
-process.exit()
+    process.exit()
 });
