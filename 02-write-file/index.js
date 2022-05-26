@@ -12,3 +12,4 @@ stdin.on('data', chunk => {
     output.write(chunk)
 })
 stdin.on('error', error => console.log('Error', error.message));
+process.on('exit', () => stdout.write('\n Goodbye dear friend \n'));
